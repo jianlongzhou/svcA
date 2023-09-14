@@ -31,7 +31,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 
 func request() {
 	host := os.Getenv("HOST")
-	resp, err := http.Get(fmt.Sprintf("%s:8081/service/b", host))
+	resp, err := http.Get(fmt.Sprintf("%s/service/b", host))
 	if err != nil {
 		fmt.Println("call service b err: ", err)
 		return

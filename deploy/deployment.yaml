@@ -17,3 +17,6 @@ spec:
           image: ccr.ccs.tencentyun.com/k8s-env/svc-a:v1
           ports:
             - containerPort: 8080
+          env:
+          - name: HOST
+            value: http://service-b
